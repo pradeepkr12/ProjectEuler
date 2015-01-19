@@ -1,12 +1,12 @@
-numcases = input()
+# numcases = input()
 
-def solve(numcases):
+def solve():
 	result = []
 	primes = [2,3,5,7]
-	# numcases = 50
-	for n in xrange(numcases):
-	    num = input()
-	    # num = n
+	numcases = 50
+	for n in xrange(2,numcases):
+	    # num = input()
+	    num = n
 	    lastPrime = 0
 	    newPrime = False
 	    notPrime = False
@@ -31,10 +31,10 @@ def solve(numcases):
 
 
 
-	for r in (result):
-	    print r
+	for i,r in enumerate(result):
+	    print i+2,r
 
-solve(numcases)
+solve()
                     
                         
 
